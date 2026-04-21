@@ -33,6 +33,6 @@ public class Q106_BinaryTreeFromInorderAndPostorder {
 		int[] inorder = new int[] {9,3,15,20,7};
 		int[] postorder = new int[] {9,15,7,20,3};
 
-		TreeUtil.printTreeInOrder(buildTree(inorder, postorder));
+		//TreeUtil.printTreeInOrder(buildTree(inorder, postorder));
 	}
 }

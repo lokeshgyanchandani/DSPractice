@@ -45,6 +45,6 @@ public class Q226_InvertBinaryTree {
 		root.left.right = new TreeNode(3);
 		root.right.left = new TreeNode(5);
 		root.right.right = new TreeNode(7);
-		TreeUtil.printTreeInOrder(invertTreeIterative(root));
+		//TreeUtil.printTreeInOrder(invertTreeIterative(root));
 	}
 }

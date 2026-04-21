@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Q347_TopKFrequentElements {
 
-	static int[] topKFrequentPriorityQueue(int[] nums, int k) {
+	// Use MinHeap instead of MaxHeap, so that the heap size can be maintained <= k.
+	public int[] topKFrequentPriorityQueue(int[] nums, int k) {
 		Map<Integer, Integer> counterMap = new HashMap<>();
 		for (int num: nums) {
 			int count = counterMap.getOrDefault(num, 0);
@@ -25,7 +26,13 @@ public class Q347_TopKFrequentElements {
 		return res;
 	}
 
-	static int[] topKFrequentBucketSort(int[] nums, int k) {
+    /*
+        Complexity
+            Time complexity: O(n) --> bucket storing only nums values.
+
+            Space complexity: O(n)
+     */
+	public int[] topKFrequentBucketSort(int[] nums, int k) {
 		List<Integer>[] bucket = new ArrayList[nums.length + 1];
 		Map<Integer, Integer> frequencyMap = new HashMap<Integer, Integer>();
 
@@ -48,10 +55,10 @@ public class Q347_TopKFrequentElements {
 				res.addAll(bucket[pos]);
 			}
 		}
-		return res.stream().mapToInt(i->i).toArray();
+		return res.stream().mapToInt(i -> i).toArray();
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 	}
 }

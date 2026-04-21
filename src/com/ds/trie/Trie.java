@@ -5,17 +5,17 @@ import java.util.LinkedList;
 class TrieNode {
 	char value;
 	boolean end;
-	LinkedList<TrieNode> childs = new LinkedList<>();
+	LinkedList<TrieNode> children = new LinkedList<>();
 
 	TrieNode(char c) {
 		this.value = c;
 		this.end = false;
-		this.childs = new LinkedList<TrieNode>();
+		this.children = new LinkedList<TrieNode>();
 	}
 
 	public TrieNode isChild(char c) {
-		if (childs != null) {
-			for (TrieNode child : childs) {
+		if (children != null) {
+			for (TrieNode child : children) {
 				if (child.value == c)
 					return child;
 			}
@@ -37,7 +37,7 @@ class TrieNode {
 				if (child != null)
 					current = child;
 				else {
-					current.childs.add(new TrieNode(c));
+					current.children.add(new TrieNode(c));
 					current = current.isChild(c);
 				}
 			}
@@ -53,10 +53,9 @@ class TrieNode {
 				} else
 					current = current.isChild(c);
 			}
-			if (current.end == true)
-				return true;
-			return false;
-		}
+
+            return current.end;
+        }
 	}
 }
 

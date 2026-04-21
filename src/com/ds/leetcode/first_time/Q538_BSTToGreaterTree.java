@@ -27,6 +27,6 @@ public class Q538_BSTToGreaterTree {
 		root.right.right = new TreeNode(7);
 		root.right.right.right = new TreeNode(8);
 
-		TreeUtil.printTreeInOrder(bstToGst(root));
+		//TreeUtil.printTreeInOrder(bstToGst(root));
 	}
 }

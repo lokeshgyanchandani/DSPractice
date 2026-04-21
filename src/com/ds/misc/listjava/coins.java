@@ -1,8 +1,7 @@
-package listjava;
+package com.ds.misc.listjava;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.*;
 
 public class coins {
     public ArrayList<String> letterCombinations(String digits) {

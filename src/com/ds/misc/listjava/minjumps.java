@@ -1,6 +1,4 @@
-package listjava;
-
-import java.util.ArrayList;
+package com.ds.misc.listjava;
 
 public class minjumps {
 

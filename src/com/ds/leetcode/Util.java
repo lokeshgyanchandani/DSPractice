@@ -3,8 +3,21 @@ package com.ds.leetcode;
 public class Util {
 	public static class ListNode {
 		public int val;
+
 		public ListNode next;
+
 		public ListNode(int val) {  this.val = val; }
+
+        public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+	}
+
+	public static class ListUtil {
+		public static void printList(ListNode head) {
+			while (head != null) {
+				System.out.print(head.val + " -> ");
+				head = head.next;
+			}
+		}
 	}
 
 	public static class TreeNode {

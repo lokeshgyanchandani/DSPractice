@@ -14,8 +14,8 @@ public class TestSet {
 		x.add(new person("Ashish","Goel"));
 
 		Set<Integer> y = new HashSet<Integer>();
-		y.add(new Integer(1));
-		y.add(new Integer(1));
+		y.add(Integer.valueOf(1));
+		y.add(Integer.valueOf(1));
 
 		System.out.println(y);
 		System.out.println(x);

@@ -1,6 +1,6 @@
 package com.ds.leetcode.first_time;
 
-import com.ds.leetcode.Util.*;
+import com.ds.leetcode.Util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

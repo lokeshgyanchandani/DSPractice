@@ -1,4 +1,4 @@
-package string;
+package com.ds.string;
 
 import java.util.ArrayList;
 
@@ -6,18 +6,17 @@ public class Nthpermutation {
 
 	public static void main(String[] args) {
 		int a = 123;
-		StringBuilder builder = new StringBuilder();
-		builder.append(a);
-		String x = builder.toString();
+        String x = String.valueOf(a);
 		System.out.println(x);
-		Integer a1 = new Integer(a);
-		System.out.println(a1.toString());
-		String s = "";
-		while (a > 0) {
-			s += a % 10;
-			a = a / 10;
+		Integer a1 = a;
+		System.out.println(a1);
+		StringBuilder s = new StringBuilder();
 
+		while (a > 0) {
+			s.append(a % 10);
+			a = a / 10;
 		}
+
 		System.out.println(s);
 
 		findPermutation(4, 15);

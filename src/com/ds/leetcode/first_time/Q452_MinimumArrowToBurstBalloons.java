@@ -14,7 +14,7 @@ public class Q452_MinimumArrowToBurstBalloons {
 		int count = 1;
 
 		for (int[] point : points) {
-			if (point[0] >= end) {
+			if (point[0] > end) {
 				end = point[1];
 				count++;
 			}
@@ -32,7 +32,6 @@ class Q452_IntervalComparator implements Comparator<int[]> {
 
 	@Override
 	public int compare(int[] a, int[] b) {
-		if (a[0] == b[0]) return a[1] - b[1];
-		return a[0] - b[0];
+		return Integer.compare(a[1], b[1]);
 	}
 }

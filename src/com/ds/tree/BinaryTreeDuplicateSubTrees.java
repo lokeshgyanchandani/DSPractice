@@ -29,7 +29,7 @@ public class BinaryTreeDuplicateSubTrees {
         root.right.right.right.left = new Node('F');
 
         String found = isDuplicateSubtree(root);
-        if (found.equals(""))
+        if (found.isEmpty())
             System.out.println("Found");
         else
             System.out.println("Not found");
@@ -40,10 +40,10 @@ public class BinaryTreeDuplicateSubTrees {
             return MARKER;
 
         String lStr = isDuplicateSubtree(root.left);
-        if (lStr.equals(""))
+        if (lStr.isEmpty())
             return "";
         String rStr = isDuplicateSubtree(root.right);
-        if (rStr.equals(""))
+        if (rStr.isEmpty())
             return "";
         String s = root.data + lStr + rStr;
         if (s.length() > 3 && stringSet.contains(s))

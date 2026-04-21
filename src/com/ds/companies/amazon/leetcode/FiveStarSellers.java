@@ -48,14 +48,19 @@ public class FiveStarSellers {
 			pq.offer(Arrays.asList((double) rating.get(0), (double) rating.get(1))); //initialize PriorityQueue
 
 		double currRating = 0.0;
-		for (List<Integer> rating: productRatings)
+		for (List<Integer> rating: productRatings) {
 			currRating += 100.0 * rating.get(0) / rating.get(1); // initialize currRating
+			System.out.println("Initial Current Rating " + currRating);
+		}
+
+
 
 		while (currRating < ratingThreshold * productRatings.size()) {
 			num++;
 			List<Double> rating = pq.poll();
 			List<Double> newRating = Arrays.asList(rating.get(0) + 1, rating.get(1) + 1);
 			currRating = currRating - 100.0 * rating.get(0) / rating.get(1) + 100.0 * newRating.get(0) / newRating.get(1); // keep updating the rating
+			System.out.println(newRating);
 			pq.offer(newRating);
 		}
 

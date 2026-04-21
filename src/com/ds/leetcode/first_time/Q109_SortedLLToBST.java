@@ -66,6 +66,6 @@ public class Q109_SortedLLToBST {
 		head.next.next.next.next = new ListNode(9);
 
 		TreeNode root = sortedListToBSTOptimized(head);
-		TreeUtil.printTreeInOrder(root);
+		//TreeUtil.printTreeInOrder(root);
 	}
 }

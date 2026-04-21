@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DSprac.iml" filepath="$PROJECT_DIR$/DSprac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/com/com.iml" filepath="$PROJECT_DIR$/src/com/com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/com/ds/ds.iml" filepath="$PROJECT_DIR$/src/com/ds/ds.iml" />
     </modules>
   </component>
 </project>

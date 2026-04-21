@@ -46,6 +46,6 @@ public class Q654_MaximumBinaryTree {
 
 	public static void main(String args[]) {
 		int[] nums = new int[] {3, 2, 1, 6, 0, 5};
-		TreeUtil.printTreeInOrder(constructMaximumBinaryTreeOptimized(nums));
+		//TreeUtil.printTreeInOrder(constructMaximumBinaryTreeOptimized(nums));
 	}
 }

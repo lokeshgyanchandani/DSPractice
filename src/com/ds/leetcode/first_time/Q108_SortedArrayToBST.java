@@ -20,6 +20,6 @@ public class Q108_SortedArrayToBST {
 	}
 
 	public static void main(String args[]) {
-		TreeUtil.printTreeInOrder(sortedArrayToBST(new int[] {-10,-3,0,5,9}));
+		//TreeUtil.printTreeInOrder(sortedArrayToBST(new int[] {-10,-3,0,5,9}));
 	}
 }

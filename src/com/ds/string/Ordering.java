@@ -1,4 +1,4 @@
-package string;
+package com.ds.string;
 
 public class Ordering {
 

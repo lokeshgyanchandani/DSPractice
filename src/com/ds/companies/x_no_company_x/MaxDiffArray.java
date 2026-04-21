@@ -2,6 +2,7 @@ package com.ds.companies.x_no_company_x;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class MaxDiffArray {
@@ -13,8 +14,8 @@ public class MaxDiffArray {
 		while (scan.hasNextInt()) {
 			x.add(scan.nextInt());
 		}
-HashMap<String,String> t  = new HashMap<>();
 
+		Map<String,String> t  = new HashMap<>();
 
 		int size = x.size();
 		int[] arr = new int[size];

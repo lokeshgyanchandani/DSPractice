@@ -26,6 +26,6 @@ public class Q617_MergeBinaryTrees {
 		root2.left.right = new TreeNode(4);
 		root2.right.right = new TreeNode(7);
 
-		TreeUtil.printTreeInOrder(mergeTrees(root1, root2));
+		//TreeUtil.printTreeInOrder(mergeTrees(root1, root2));
 	}
 }

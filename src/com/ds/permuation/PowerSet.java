@@ -1,4 +1,4 @@
-package miscellaneous;
+package com.ds.permuation;
 
 import java.util.Arrays;
 

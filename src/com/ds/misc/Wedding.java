@@ -1,4 +1,4 @@
-package miscellaneous;
+package com.ds.misc;
 
 import java.util.Arrays;
 

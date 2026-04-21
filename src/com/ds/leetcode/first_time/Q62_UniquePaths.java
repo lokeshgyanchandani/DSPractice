@@ -19,15 +19,17 @@ public class Q62_UniquePaths {
 			return 0;
 		if (m == 1 || n == 1)
 			return 1;
-		int[] arr = new int[m];
-		for (int i = 0; i < m; i++)
+		int[] arr = new int[n];
+
+		for (int i = 0; i < n; i++)
 			arr[i] = 1;
-		for (int i = 1; i < n; i++) {
-			for (int j = 1; j < m; j++) {
+
+		for (int i = 1; i < m; i++) {
+			for (int j = 1; j < n; j++) {
 				arr[j] += arr[j - 1];
 			}
 		}
-		return arr[m - 1];
+		return arr[n - 1];
 	}
 
 	public static void main(String args[]) {

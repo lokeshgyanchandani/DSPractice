@@ -13,7 +13,8 @@ public class Q78_Subsets {
 		return results;
 	}
 
-	static void helper(int[] nums, List<Integer> intermediate, List<List<Integer>> results, int start) {
+	static void helper(int[] nums, List<Integer> intermediate, List<List<Integer>> results,
+                       int start) {
 		if (intermediate == null) {
 			intermediate = new ArrayList<>();
 			results.add(new ArrayList<>(intermediate));
